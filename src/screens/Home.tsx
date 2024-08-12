@@ -34,7 +34,15 @@ export function Home() {
                     +
                 </Text>
             </TouchableOpacity>
+           
+        </View>
 
+
+            <Text style={styles.listTitle}>Compras Pendentes</Text>
+
+          <View style={styles.list}>
+
+            <Text style={styles.listEmptyText}>Comprou todos os produtos? Adicione produtos a sua lista de compras</Text>
 
           </View>
 
@@ -79,7 +87,7 @@ const styles = StyleSheet.create({
         width: "100%",
         flexDirection: "row",   
         marginTop: 18,
-
+        marginBottom: 36,
     },
 
     tittle:{
@@ -93,6 +101,21 @@ const styles = StyleSheet.create({
         color: '#000',
         fontSize: 16,
         fontWeight:"normal",
+    },
+    listTitle:{
+        fontSize: 20,
+        fontWeight: "bold",
+        
+    },
+    listEmptyText:{
+        fontSize: 16,
+        fontWeight: 'normal',
+        textAlign: 'center'
+    },
+    list:{
+        flex: 1,
+        justifyContent: 'center',
+
     }
 
   
